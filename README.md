@@ -1,2 +1,5 @@
 # Assignment2
-machine learning
+## machine learning
+regression
+binary classification
+multi-classification
