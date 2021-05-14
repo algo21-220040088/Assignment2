@@ -16,7 +16,7 @@ Finally, we get the following results: the first figure shows the skewness of ca
 ![Image text](https://github.com/algo21-220040088/Assignment2/blob/main/result/pictures/iv_diff_put(quantile%3D0.85and0.15).png)
 
 
-### step 2： backtesting 
+### step 2： back test 
 
 Since we can't directly purchase the options with delta = 0.5 and delta = 0.25 from the market, we need to configure them according to the existing options.
 
@@ -42,10 +42,15 @@ We compare the skew calculated with the 0.8-quantile, 0.5-quantile and 0.2-quant
 
 The following two combination diagrams show the back test results of call option trading and put option trading respectively.
 
-<p align="center">**call**</p>
+**<p align="center">call</p>**
 ![Image text](https://github.com/algo21-220040088/Assignment2/blob/main/result/pictures/skew_arbitrage(call).png)
 
-<p align="center">**put**</p>
+**<p align="center">put</p>**
 ![Image text](https://github.com/algo21-220040088/Assignment2/blob/main/result/pictures/skew_arbitrage(put).png)
 
 In the top figure, the broken line represents the quantile value of skewness, and the point represents the skewness value calculated on the trading day. The red dot indicates that skew is at a historical high. On this trading day, you should short the portfolio options with delta = 0.25 and long the portfolio options with delta = 0.5. The blue dot indicates that there is no arbitrage possibility on the trading day, so it does not choose to open a position. The green dot indicates that skew is at a historical low. On this trading day, we should short the portfolio options with delta = 0.5 and long the portfolio options with delta = 0.25.
+
+We can also combine call option trading with put option trading.The following figure shows the back test result.
+![Image text](https://github.com/algo21-220040088/Assignment2/blob/main/result/pictures/skew_arbitrage(call%2Bput).png)
+
+
