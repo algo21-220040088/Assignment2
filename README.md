@@ -53,4 +53,8 @@ In the top figure, the broken line represents the quantile value of skewness, an
 We can also combine call option trading with put option trading.The following figure shows the back test result.
 ![Image text](https://github.com/algo21-220040088/Assignment2/blob/main/result/pictures/skew_arbitrage(call%2Bput).png)
 
+We can record the return after each complete transaction (opening + closing) and the contribution of each Greek to the return, as shown in the figure below. For each transaction, the position of option(delta = 0.25) is twice that of option(delta = 0.5), so that the total delta is 0.
+![Image text](https://github.com/algo21-220040088/Assignment2/blob/main/result/data/open_close_total(call).jpg)
 
+We can also record the detail information of each transaction.
+![Image text](https://github.com/algo21-220040088/Assignment2/blob/main/result/data/open_close_detail(call).jpg)
